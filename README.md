@@ -34,6 +34,11 @@ The main components of the project include:
 Here is a simplified explanation of how the server handles palindrome checks:
 
 ```javascript
+function isPalindrome(str) {
+	let copy = str.toLowerCase().split("").reverse().join("");
+	return str.toLowerCase() === copy; // true or false
+}
+
 else if (page == "/api") {
 	if ("palindrome" in params) {
 		const word = params["palindrome"];
@@ -60,5 +65,3 @@ Below is a gif demonstrating how the project works. You can see how the user inp
 ## Conclusion
 
 This project was a fantastic opportunity for me to dive into backend development, learn about server-side logic, and understand how to interact with APIs. I now feel more confident in my abilities to create backend functionalities and look forward to applying these learnings in future projects.
-# isYourWordAPalindrome-
-# isYourWordAPalindrome-
